@@ -11,6 +11,9 @@ body {
   color: var(--main-text-color);
   position: relative;
   background: var(--main-background-color);
+  background-image: url("background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
@@ -141,11 +144,30 @@ nav a:hover {
   display: flex;
 }
 
+@media only screen and (max-width: 1024px) {
+
+body{
+  background-image: url("background.png");
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: top;
+}
+
+}
+
 @media only screen and (max-width: 800px) {
   .hide-800 {
     display: none;
-  }
+ 
 
+
+  body {
+  background-image: url("background.png");
+  background-repeat: no-repeat;
+  background-size:auto;
+  background-position: center
+  } 
+ }
   .mobile-menu-button {
     right: 37px;
   }
@@ -198,6 +220,7 @@ header {
 .mintHeader {
   flex-direction: column;
   gap: 20px;
+
 }
 
 @media only screen and (min-width: 800px) {
@@ -280,6 +303,49 @@ header {
   margin: auto;
 }
 
+.box {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.img1{
+   width: 100%;
+   height: auto;
+   max-width: 200px;
+   z-index: 1;
+   position:absolute;
+   right: -80px;
+   bottom: -70px;
+}
+.img2 {
+    width: 100%;
+    height: auto;
+    max-width: 225px;
+    z-index: 1;
+    position: absolute;
+    left: -80px;
+    bottom: -60px;
+}
+.img3 {
+    width: 100%;
+    height: auto;
+    max-width: 200px;
+    z-index: -1;
+    position: absolute;
+    left: -20px;
+    top: -100px;
+}
+
+.img4 {
+    width: 100%;
+    height: auto;
+    max-width: 205px;
+    z-index: 1;
+    position: absolute;
+    right: -80px;
+    top: -100px;
+}
 .mints-available {
   background: rgb(65, 65, 65);
   box-shadow: none;
@@ -293,20 +359,23 @@ header {
 .minting-box {
   background-color: var(--minting-box-color) !important;
   color: var(--minting-box-text-color) !important;
+  
 }
 
 .minting-box h5 {
   color: var(--minting-box-heading-color);
+  font-size: 2rem;
 }
 
 .minting-info {
   background-color: var(--minting-box-info-box-color);
   box-shadow: none;
   padding: 10px;
-  display: flex;
+  display: block;
   flex-direction: column;
   justify-content: center;
   margin-bottom: 20px;
+
 }
 
 .minting-info h1 {
@@ -322,11 +391,19 @@ header {
   margin-bottom: 20px;
  }
 
-
+.custom-mint-container p{
+  text-align: center;
+}
 
 .loading:after {
   content: " .";
   animation: dots 1s steps(5, end) infinite;
+}
+
+.why {
+  font-size: 20px;
+  text-align:center;
+  margin-left: 5%;
 }
 
 @keyframes dots {

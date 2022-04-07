@@ -61,7 +61,7 @@ const App = () => {
 
   return (
     <div>
-      <div id="mobileNavContainer" className="mobile-nav">
+          {/* <div id="mobileNavContainer" className="mobile-nav">
         <div className="mobile-nav-close-button">
           <img src="/icons/close.svg" alt="" onClick={toggleMenu} />
         </div>
@@ -103,11 +103,11 @@ const App = () => {
       </div>
       <div className="mobile-menu-button" onClick={toggleMenu}>
         <img src="/icons/menu.svg" alt="" />
-      </div>
+      </div>*/}
       <nav>
         <div className="nav-container">
-          <img className="nav-logo" src="/img/logo.png" alt="" />
-          <a className="hide-800" href="/#link1">
+                  <a href="https://metaplayersnft.com"> <img className="nav-logo" src="/img/logo.png" alt=""/> </a>
+                  {/* <a className="hide-800" href="/#link1">
             Link 1
           </a>
           <a className="hide-800" href="/#link2">
@@ -126,15 +126,15 @@ const App = () => {
             <a href="https://discord.com" target="_blank" rel="noreferrer">
               <img className="nav-social" src="/icons/discord.svg" alt="" />
             </a>
-          </div>
-        </div>
+          </div> */}
+        </div> 
       </nav>
       <div className="content-wrapper">
-        <header className="card" id="link1">
-          <div style={{ padding: "0 24px 0 24px 0" }}>
+        <header className="" id="link1">
+          {/*<div style={{ padding: "0 24px 0 24px 0" }}>
             <h3 className="text-secondary-color">Welcome To</h3>
             <h1 className="pb-3">The Boiler Plate</h1>
-            <p className="text-secondary-color">
+                       <p className="text-secondary-color">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
               scelerisque ipsum non est porta mollis. Donec sapien sapien,
               dictum eget enim sed, hendrerit semper orci. Donec ante magna,
@@ -142,8 +142,12 @@ const App = () => {
               lorem. Vestibulum molestie dui turpis, tincidunt porta sem congue
               nec.
             </p>
-          </div>
-          <div>
+          </div> */}
+          <div className="box">
+            <img className="img1 hide-800" src="img/1.png"/>
+             <img className="img2 hide-800" src="img/2.png"/>
+             <img className="img3 hide-800" src="img/3.png"/>
+             <img className="img4 hide-800" src="img/4.png"/>
             <ThemeProvider theme={theme}>
               <ConnectionProvider endpoint={endpoint}>
                 <WalletProvider wallets={wallets} autoConnect>
@@ -160,10 +164,11 @@ const App = () => {
               </ConnectionProvider>
             </ThemeProvider>
           </div>
+                  
         </header>
 
-        <div id="link2" className="container">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac velit
+            {/*  <div id="link2" className="container">
+           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac velit
           aliquet, semper sapien sed, ornare augue. Phasellus sed velit
           interdum, sagittis metus quis, facilisis lectus. Cras sollicitudin
           purus at magna eleifend maximus. Nulla nec nulla in nunc maximus
@@ -178,14 +183,14 @@ const App = () => {
           hendrerit interdum. Etiam at dictum nisi.
         </div>
 
-        <div id="link3" className="container card">
+               <div id="link3" className="container card">
           <h1 className="pb-3">Lorem ipsum</h1>
-        </div>
+        </div> 
 
-        <div id="link4" className="container faq">
+         <div id="link4" className="container faq">
           <h1 style={{ padding: "0 0 24px 0" }}>FAQ</h1>
           <div>
-            <h4>Lorem ipsum?</h4>
+           <h4>Lorem ipsum?</h4>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit.
               Suspendisse id metus id mauris tincidunt posuere. Vivamus neque
@@ -216,8 +221,8 @@ const App = () => {
 
             <hr />
           </div>
-        </div>
-      </div>
+        </div>*/}
+      </div> 
     </div>
   );
 };

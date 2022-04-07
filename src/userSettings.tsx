@@ -145,11 +145,10 @@ export const publicSaleSettings: PublicSaleSettings = {
   // date('29 2021 00:00:00 GMT')
 
   //Title and Description
-  title: "Public Sale",
-  desc: "Sale is now live. Mint your NFT below",
-
+  title: "METAPLAYERS",
+    desc: "Welcome to MetaPlayer! 5555 Unique Football Players NFT waiting for you on the metaverse ",
   //Enable Custom HTML
-  enableCustomHTML: false,
+  enableCustomHTML: true,
 };
 
 export class MintPublicSaleCustomHTML extends React.Component {
@@ -159,7 +158,7 @@ export class MintPublicSaleCustomHTML extends React.Component {
         {/* Add Custom HTML code for Public Minting Here! */}
 
         
-        <p>Test 3</p>
+        <p> metaplayersnft.com</p>
         
         
         {/* End */}

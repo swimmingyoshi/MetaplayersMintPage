@@ -35,23 +35,24 @@ import {
 
 const ConnectButton = styled(WalletDialogButton)`
   position: absolute;
-  left: 0px;
+  left: 25%;
   bottom: -15px;
-  width: 100%;
+  width: 50%;
   height: 60px;
   margin-top: 10px;
   margin-bottom: 5px;
-  background: linear-gradient(180deg, #604ae5 0%, #813eee 100%);
+  background: #00FF0F;
   color: white;
-  font-size: 16px;
+  font-size: 28px;
   font-weight: bold;
   transform: translate(0%, -50%);
+  border-radius: 20px;
 `;
 
 const MintContainer = styled.div`
   position: absolute;
-  width: 100%;
-  left: 0px;
+  width: 50%;
+  left: 25%;
   bottom: 15px;
 `; // add your styles here
 
@@ -262,7 +263,6 @@ const Home = (props: HomeProps) => {
           style={{
             padding: "34px 24px 90px 24px",
             display: "flex",
-
             borderRadius: 6,
           }}
           className="minting-box"
@@ -374,7 +374,8 @@ const Home = (props: HomeProps) => {
                           isMinting={isMinting}
                           onMint={onMint}
                         />
-                      )}
+                                              )}
+                   
                     </MintContainer>
                   )}
                 </>
