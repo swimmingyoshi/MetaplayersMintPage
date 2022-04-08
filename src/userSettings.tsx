@@ -158,7 +158,7 @@ export class MintPublicSaleCustomHTML extends React.Component {
         {/* Add Custom HTML code for Public Minting Here! */}
 
         
-        <p> metaplayersnft.com</p>
+        <p>metaplayersnft.com</p>
         
         
         {/* End */}

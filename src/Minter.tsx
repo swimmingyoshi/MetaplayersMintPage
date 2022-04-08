@@ -308,15 +308,15 @@ const Home = (props: HomeProps) => {
                     justifyContent="space-between"
                     color="textSecondary"
                   >
-                    <div className="test-stat">
-                      {(phase === Phase.WhiteListMint ||
-                        phase === Phase.PublicMint) &&
-                        (itemsAvailable !== null && mintingTotal !== null ? (
-                          <p>{mintingTotal + " / " + itemsAvailable}</p>
+                   {/* <div className="test-stat">
+                                          {(phase === Phase.WhiteListMint ||
+                                              phase === Phase.PublicMint) &&
+                                              (itemsAvailable !== null && mintingTotal !== null ? (
+                           <p>{mintingTotal + " / " + itemsAvailable}</p> 
                         ) : (
                           <p className="loading"></p>
                         ))}
-                    </div>
+                    </div>*/}
 
                     <div className="text-end">
                       {(phase === Phase.Welcome && welcomeSettings.showPrice) ||
@@ -324,7 +324,7 @@ const Home = (props: HomeProps) => {
                         phase === Phase.PublicMint ? (
                         <>
                           {price ? (
-                            <p>{price} Sol</p>
+                            <h3>{price} SOL</h3>
                           ) : (
                             <p className="loading"></p>
                           )}
