@@ -146,7 +146,7 @@ export const publicSaleSettings: PublicSaleSettings = {
 
   //Title and Description
   title: "METAPLAYERS",
-    desc: "Welcome to MetaPlayer! 5555 Unique Football Players NFT waiting for you on the metaverse ",
+    desc: "5555 Unique Football Players NFT waiting for you on the metaverse ",
   //Enable Custom HTML
   enableCustomHTML: true,
 };
