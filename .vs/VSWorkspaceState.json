@@ -1,7 +1,9 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\public",
+    "\\src"
   ],
-  "SelectedNode": "\\.env",
+  "SelectedNode": "\\.env-example",
   "PreviewInSolutionExplorer": false
 }
